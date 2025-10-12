@@ -11,28 +11,7 @@
     --white: #ffffff;
     --shadow: rgba(74, 144, 164, 0.1);
     --shadow-hover: rgba(74, 144, 164, 0.2);
-}
-
-/* Dark Mode Variables */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary: #A8CAD6;
-        --secondary: #7B9E87;
-        --tertiary: #8B9DC3;
-        --deep-blue: #6BA5B8;
-        --light-bg: #0F1419;
-        --dark-text: #e8e8e8;
-        --medium-text: #c5c5c5;
-        --light-text: #a0a0a0;
-        --white: #1a1f26;
-        --shadow: rgba(168, 202, 214, 0.1);
-        --shadow-hover: rgba(168, 202, 214, 0.2);
-    }
-
-    .navbar {
-        background: rgba(255, 255, 255, 0.8);
-        border-bottom: 1px solid rgba(74, 144, 164, 0.1);
-    }
+    color-scheme: light only;
 }
 
 /* Reset and Base Styles */
@@ -648,8 +627,8 @@ section {
 /* Responsive Design */
 @media (max-width: 968px) {
     .hero .container {
-        grid-template-columns: 1fr;
-        text-align: center;
+        grid-template-columns: 1fr 0.7fr;
+        gap: 2rem;
     }
 
     .hero::before {
@@ -657,8 +636,8 @@ section {
     }
 
     .hero-title {
-        font-size: 4.5rem;
-        letter-spacing: -2.5px;
+        font-size: 3.5rem;
+        letter-spacing: -2px;
     }
 
     .navbar .container {
@@ -671,21 +650,33 @@ section {
 
     .hero-subtitle {
         max-width: 100%;
-        font-size: 1.75rem;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.05rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-badge {
+        padding: 1rem 2.5rem;
+        font-size: 0.95rem;
     }
 
     .hero-visual {
-        height: 450px;
+        height: auto;
     }
 
     .visual-container {
-        width: 400px;
-        height: 400px;
+        width: 100%;
+        height: auto;
+        min-height: 250px;
     }
 
     .hero-image {
-        max-width: 380px;
-        max-height: 380px;
+        max-width: 250px;
+        max-height: 250px;
     }
 
     section {
@@ -723,22 +714,40 @@ section {
 }
 
 @media (max-width: 768px) {
-    .nav-links {
+    .hero .container {
+        grid-template-columns: 1fr 0.6fr;
         gap: 1.5rem;
     }
 
-    .hero-title {
-        font-size: 3.5rem;
-        letter-spacing: -2px;
+    .nav-links {
+        gap: 1.5rem;
+        font-size: 0.9rem;
     }
 
-    .nav-links {
-        gap: 2rem;
-        font-size: 0.95rem;
+    .hero-title {
+        font-size: 2.8rem;
+        letter-spacing: -1.5px;
+        margin-bottom: 1.5rem;
     }
 
     .hero-subtitle {
-        font-size: 1.5rem;
+        font-size: 1.15rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-badge {
+        padding: 0.85rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-image {
+        max-width: 200px;
+        max-height: 200px;
     }
 
     .section-title {
@@ -761,33 +770,55 @@ section {
     .coming-soon-content h2 {
         font-size: 2.5rem;
     }
-
-    .cta-badge {
-        padding: 1rem 2.5rem;
-        font-size: 1rem;
-    }
 }
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 1.5rem;
+        padding: 0 1rem;
     }
 
     .navbar .container {
-        padding: 1rem 1.5rem;
+        padding: 1rem;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr 0.5fr;
+        gap: 1rem;
     }
 
     .hero-title {
-        font-size: 2.75rem;
+        font-size: 2.2rem;
+        letter-spacing: -1px;
+        margin-bottom: 1rem;
     }
 
     .hero-subtitle {
-        font-size: 1.25rem;
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-tagline {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .cta-badge {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .hero-image {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .visual-container {
+        min-height: 150px;
     }
 
     .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
+        gap: 0.75rem;
+        font-size: 0.85rem;
     }
 
     .section-title {
