@@ -71,7 +71,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Simple visual - no interaction needed for mandala
+// Hero visual - meditate.svg
 
 // Add active state to navigation links based on scroll position
 window.addEventListener('scroll', () => {
