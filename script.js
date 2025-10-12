@@ -71,20 +71,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Visual container - make shapes respond to mouse movement
-const visualContainer = document.querySelector('.visual-container');
-if (visualContainer) {
-    document.addEventListener('mousemove', (e) => {
-        const mouseX = e.clientX / window.innerWidth - 0.5;
-        const mouseY = e.clientY / window.innerHeight - 0.5;
-
-        visualContainer.style.transform = `
-            perspective(1000px)
-            rotateY(${mouseX * 5}deg)
-            rotateX(${-mouseY * 5}deg)
-        `;
-    });
-}
+// Simple visual - no interaction needed for mandala
 
 // Add active state to navigation links based on scroll position
 window.addEventListener('scroll', () => {
@@ -102,9 +89,9 @@ window.addEventListener('scroll', () => {
     });
 
     navLinks.forEach(link => {
-        link.style.color = 'rgba(255, 255, 255, 0.9)';
+        link.style.color = 'var(--dark-text)';
         if (link.getAttribute('href') === `#${currentSection}`) {
-            link.style.color = '#ffffff';
+            link.style.color = 'var(--primary)';
         }
     });
 });
