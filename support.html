@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light only">
+    <meta name="description" content="Steer App Support - Get help with the Steer app">
+    <meta name="keywords" content="Steer, support, help, FAQ, contact">
+    <title>Support - Steer App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .support-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 20px 60px;
+        }
+
+        .support-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .support-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary, #4A8FA8);
+            margin-bottom: 12px;
+        }
+
+        .support-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .support-content {
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .support-content h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .support-content h3 {
+            font-size: 1.3rem;
+            color: #34495e;
+            margin-top: 32px;
+            margin-bottom: 16px;
+        }
+
+        .support-content p {
+            margin-bottom: 16px;
+        }
+
+        .support-content ul {
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+
+        .support-content li {
+            margin-bottom: 12px;
+        }
+
+        .support-content a {
+            color: #4A8FA8;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom-color 0.3s;
+        }
+
+        .support-content a:hover {
+            border-bottom-color: #4A8FA8;
+        }
+
+        .contact-box {
+            background: #f8f9fa;
+            border-left: 4px solid #4A8FA8;
+            padding: 24px;
+            margin: 32px 0;
+            border-radius: 4px;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+        }
+
+        .faq-item {
+            margin-bottom: 32px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: #555;
+            padding-left: 16px;
+            border-left: 3px solid #e0e0e0;
+        }
+
+        .support-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin: 32px 0;
+        }
+
+        .support-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 24px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+
+        .support-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .support-card-icon {
+            font-size: 48px;
+            color: #4A8FA8;
+            margin-bottom: 16px;
+        }
+
+        .support-card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.2rem;
+        }
+
+        .support-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .support-container {
+                padding: 100px 16px 40px;
+            }
+
+            .support-header h1 {
+                font-size: 2rem;
+            }
+
+            .support-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .support-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="logo">
+                    <img src="steer-logo-v3.svg" alt="Steer" style="height: 40px;">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#vision">Vision</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Support Content -->
+    <div class="support-container">
+        <div class="support-header">
+            <h1>Steer App Support</h1>
+            <p>We're here to help you navigate your journey with confidence</p>
+        </div>
+
+        <div class="support-content">
+            <div class="contact-box">
+                <h3>Need Help?</h3>
+                <p>
+                    Our support team is ready to assist you. For the fastest response, please email us at
+                    <a href="mailto:support@steercorp.io">support@steercorp.io</a> with details about your issue.
+                </p>
+                <p style="margin-bottom: 0;">
+                    <strong>Response Time:</strong> We typically respond within 24-48 hours during business days.
+                </p>
+            </div>
+
+            <div class="support-cards">
+                <div class="support-card">
+                    <span class="material-symbols-outlined support-card-icon">mail</span>
+                    <h3>Email Support</h3>
+                    <p><a href="mailto:support@steercorp.io">support@steercorp.io</a></p>
+                </div>
+                <div class="support-card">
+                    <span class="material-symbols-outlined support-card-icon">policy</span>
+                    <h3>Privacy Policy</h3>
+                    <p><a href="privacy.html">View our privacy policy</a></p>
+                </div>
+                <div class="support-card">
+                    <span class="material-symbols-outlined support-card-icon">info</span>
+                    <h3>General Inquiries</h3>
+                    <p><a href="mailto:hello@steercorp.io">hello@steercorp.io</a></p>
+                </div>
+            </div>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I create an account?</div>
+                <div class="faq-answer">
+                    <p>Simply download the Steer app and sign in with your Google account. The process is quick and secure, using Google's authentication system.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What information do I need to provide?</div>
+                <div class="faq-answer">
+                    <p>To generate your personalized Vedic birth chart, you'll need to provide your date of birth, time of birth, and place of birth. The more accurate your birth time, the more precise your insights will be.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">I don't know my exact birth time. Can I still use the app?</div>
+                <div class="faq-answer">
+                    <p>Yes, you can still use Steer with an approximate birth time, though some insights may be less precise. We recommend checking your birth certificate, hospital records, or asking family members for the most accurate time possible.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How does the AI chat work?</div>
+                <div class="faq-answer">
+                    <p>Our AI chat is powered by advanced language models that have been specifically trained to understand Vedic astrology. The AI analyzes your unique birth chart and provides personalized guidance based on your planetary positions, current periods (Dashas), and the questions you ask.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can I create profiles for family members?</div>
+                <div class="faq-answer">
+                    <p>Yes! Steer supports multiple profiles. You can create charts for family members, friends, or anyone else (with their permission). Each profile maintains its own complete chart and insight history.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is my data secure?</div>
+                <div class="faq-answer">
+                    <p>Absolutely. We take your privacy very seriously. All data is encrypted in transit and at rest. We use industry-standard security practices and never sell your personal information. For more details, please review our <a href="privacy.html">Privacy Policy</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do I delete my account?</div>
+                <div class="faq-answer">
+                    <p>To delete your account, please email us at <a href="mailto:support@steercorp.io">support@steercorp.io</a> with the subject line "Account Deletion Request". We'll process your request within 30 days and confirm when your data has been deleted.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What AI models does Steer support?</div>
+                <div class="faq-answer">
+                    <p>Steer supports multiple AI providers including OpenAI (GPT-4, GPT-3.5), Anthropic (Claude), Google (Gemini), and others. You can choose your preferred model based on the style of insights you prefer.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How accurate are the astrological calculations?</div>
+                <div class="faq-answer">
+                    <p>We use Swiss Ephemeris, the gold standard in astronomical calculations, which is the same engine used by professional astrologers and NASA. Our calculations are precise to the second.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What is the difference between Vedic and Western astrology?</div>
+                <div class="faq-answer">
+                    <p>Vedic (Jyotish) astrology uses the sidereal zodiac based on fixed star positions, while Western astrology uses the tropical zodiac. Vedic astrology includes sophisticated timing techniques like Dasha systems and uses different house systems. Steer focuses on the Vedic tradition.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Should I use Steer for medical or legal advice?</div>
+                <div class="faq-answer">
+                    <p>No. Steer provides guidance for personal growth and self-understanding, but it should not be used as a substitute for professional medical, legal, financial, or psychological advice. Always consult qualified professionals for important decisions.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">I found a bug or have a feature request. How do I report it?</div>
+                <div class="faq-answer">
+                    <p>We appreciate your feedback! Please email us at <a href="mailto:support@steercorp.io">support@steercorp.io</a> with details about the bug or your feature suggestion. We review all feedback carefully.</p>
+                </div>
+            </div>
+
+            <h2>Common Issues & Solutions</h2>
+
+            <h3>Unable to Sign In</h3>
+            <p>If you're having trouble signing in with Google:</p>
+            <ul>
+                <li>Ensure you have a stable internet connection</li>
+                <li>Make sure you're using the correct Google account</li>
+                <li>Try clearing the app cache and restarting</li>
+                <li>Check that you've granted the necessary permissions to the app</li>
+            </ul>
+
+            <h3>App is Crashing or Freezing</h3>
+            <p>If the app is not working properly:</p>
+            <ul>
+                <li>Make sure you have the latest version of the app installed</li>
+                <li>Try force-closing the app and reopening it</li>
+                <li>Restart your device</li>
+                <li>Check that you have sufficient storage space on your device</li>
+                <li>If the issue persists, contact us at <a href="mailto:support@steercorp.io">support@steercorp.io</a></li>
+            </ul>
+
+            <h3>Birth Chart Not Loading</h3>
+            <p>If your birth chart isn't displaying:</p>
+            <ul>
+                <li>Verify that you've entered complete birth details (date, time, and location)</li>
+                <li>Check your internet connection</li>
+                <li>Try refreshing the page or navigating away and back</li>
+                <li>Ensure the birth location is entered correctly with a valid city name</li>
+            </ul>
+
+            <h3>AI Chat Not Responding</h3>
+            <p>If the AI chat isn't working:</p>
+            <ul>
+                <li>Check your internet connection</li>
+                <li>Verify that you have sufficient credits in your account</li>
+                <li>Try selecting a different AI model in the settings</li>
+                <li>Wait a moment and try again - there may be temporary high demand</li>
+            </ul>
+
+            <h2>System Requirements</h2>
+            <p>Steer is compatible with:</p>
+            <ul>
+                <li><strong>iOS:</strong> iPhone and iPad running iOS 14 or later</li>
+                <li><strong>Android:</strong> Devices running Android 8.0 (Oreo) or later</li>
+            </ul>
+
+            <h2>Getting Started</h2>
+            <p>New to Steer? Here's how to get the most out of the app:</p>
+            <ol>
+                <li><strong>Create Your Profile:</strong> Sign in with Google and enter your accurate birth details</li>
+                <li><strong>Explore Your Chart:</strong> Review your birth chart and planetary positions</li>
+                <li><strong>Review Your Dasha Timeline:</strong> Understand what planetary periods are influencing your life now and in the future</li>
+                <li><strong>Chat with AI:</strong> Ask questions about relationships, career, purpose, or any area of life</li>
+                <li><strong>Explore Self-Discovery Questions:</strong> Work through the 100 curated questions across 10 life categories</li>
+            </ol>
+
+            <h2>Contact Information</h2>
+            <div class="contact-box">
+                <p><strong>Email Support:</strong> <a href="mailto:support@steercorp.io">support@steercorp.io</a></p>
+                <p><strong>General Inquiries:</strong> <a href="mailto:hello@steercorp.io">hello@steercorp.io</a></p>
+                <p><strong>Press & Media:</strong> <a href="mailto:press@steercorp.io">press@steercorp.io</a></p>
+                <p style="margin-bottom: 0;"><strong>Privacy Concerns:</strong> <a href="mailto:privacy@steercorp.io">privacy@steercorp.io</a></p>
+            </div>
+
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a> - Learn how we protect your data</li>
+                <li><a href="index.html">About Steer Corp</a> - Learn more about our mission and vision</li>
+            </ul>
+
+            <p style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #e0e0e0; color: #666; font-size: 0.9rem; text-align: center;">
+                Thank you for choosing Steer. We're honored to be part of your journey.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Steer Corp. All rights reserved.</p>
+                <div style="margin-top: 8px;">
+                    <a href="privacy.html" style="color: #95b5c0; text-decoration: none; margin-right: 16px;">Privacy Policy</a>
+                    <a href="support.html" style="color: #95b5c0; text-decoration: none; margin-right: 16px;">Support</a>
+                    <a href="mailto:support@steercorp.io" style="color: #95b5c0; text-decoration: none;">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
