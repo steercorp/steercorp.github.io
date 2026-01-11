@@ -1,9 +1,8 @@
 # Steercorp Website Deployment Pipeline
-# Deploys to S3 + CloudFront on push to main
+# Deploys to S3 + CloudFront on tag push
 
 when:
-  - event: push
-    branch: main
+  - event: tag
 
 labels:
   platform: local
