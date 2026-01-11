@@ -1,0 +1,52 @@
+# Steercorp Website Deployment Pipeline
+# Deploys to S3 + CloudFront on push to main
+
+when:
+  - event: push
+    branch: main
+
+labels:
+  platform: local
+
+steps:
+  - name: deploy-to-s3
+    image: amazon/aws-cli:2.13.0
+    environment:
+      AWS_DEFAULT_REGION: us-east-1
+    commands:
+      - echo "Deploying steercorp website to S3..."
+      - |
+        aws s3 sync . s3://steercorp-website-content/ \
+          --exclude ".git/*" \
+          --exclude ".woodpecker/*" \
+          --exclude "README.md" \
+          --exclude ".gitignore" \
+          --exclude "CNAME" \
+          --exclude ".DS_Store" \
+          --delete
+      - echo "S3 sync complete"
+
+  - name: invalidate-cloudfront
+    image: amazon/aws-cli:2.13.0
+    environment:
+      AWS_DEFAULT_REGION: us-east-1
+      CLOUDFRONT_DISTRIBUTION_ID:
+        from_secret: cloudfront_steercorp_distribution_id
+    commands:
+      - |
+        aws cloudfront create-invalidation \
+          --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} \
+          --paths "/*"
+      - echo "CloudFront invalidation created"
+
+  - name: verify
+    image: curlimages/curl:8.00.1
+    commands:
+      - sleep 15
+      - |
+        for page in "" "privacy.html" "terms.html" "support.html"; do
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://corp.steer.coach/${page}")
+          echo "https://corp.steer.coach/${page} - HTTP ${STATUS}"
+          [ "$STATUS" = "200" ] || exit 1
+        done
+      - echo "Deployment verified!"
