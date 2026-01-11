@@ -139,16 +139,16 @@
     <div class="privacy-container">
         <div class="privacy-header">
             <h1>Privacy Policy</h1>
-            <p class="last-updated">Last Updated: November 2025</p>
+            <p class="last-updated">Last Updated: January 2026</p>
         </div>
 
         <div class="privacy-content">
             <p>
-                At Steer Corp ("we," "our," or "us"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use the Steer mobile application (the "App").
+                At Steer Corp ("we," "our," or "us"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use Steer on any platform, including our mobile applications (iOS, Android), web applications, and integrated services (collectively, the "App" or "Services").
             </p>
 
             <p>
-                Please read this Privacy Policy carefully. By using the App, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use the App.
+                Please read this Privacy Policy carefully. By using the App or Services, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use the App or Services.
             </p>
 
             <h2>1. Information We Collect</h2>
@@ -156,9 +156,10 @@
             <h3>1.1 Personal Information You Provide</h3>
             <p>We collect the following information that you voluntarily provide when using the App:</p>
             <ul>
-                <li><strong>Account Information:</strong> When you create an account using Google Sign-In, we collect your name, email address, and Google account profile information.</li>
-                <li><strong>Birth Details:</strong> To generate your Vedic astrology birth chart (Kundali), we collect your date of birth, time of birth, and place of birth. This information is essential for the core functionality of the App.</li>
-                <li><strong>Profile Information:</strong> You may create multiple profiles (for yourself, family members, or others), each containing the birth details mentioned above.</li>
+                <li><strong>Account Information:</strong> When you create an account, we collect your name, email address, and profile information through our supported authentication providers (such as Google Sign-In or other identity services).</li>
+                <li><strong>Birth Details:</strong> To generate your Vedic astrology birth chart (Kundali), we collect your date of birth, time of birth, place of birth (city, country), and the geographic coordinates (latitude, longitude) and timezone of your birth location. This information is essential for accurate astrological calculations.</li>
+                <li><strong>Current Location:</strong> To provide location-specific features such as daily Panchang (Vedic calendar), planetary transits, and muhurta (auspicious timing) calculations, we collect your current city of residence along with its geographic coordinates (latitude, longitude) and timezone.</li>
+                <li><strong>Profile Information:</strong> You may create multiple profiles (for yourself, family members, or others), each containing the birth details and location information mentioned above.</li>
                 <li><strong>Chat Conversations:</strong> We store your conversations with our AI-powered life coach to provide continuity and context-aware guidance.</li>
                 <li><strong>Questions and Insights:</strong> Your responses to self-discovery questions and the personalized insights generated for you.</li>
             </ul>
@@ -175,8 +176,8 @@
             <h3>1.3 Information from Third Parties</h3>
             <p>We receive information from the following third-party services:</p>
             <ul>
-                <li><strong>Google Sign-In/Firebase Authentication:</strong> Authentication data and basic profile information when you sign in with your Google account.</li>
-                <li><strong>AI Service Providers:</strong> We use various AI providers (including OpenAI, Anthropic Claude, Google Gemini, and others) to power our intelligent conversations. These providers process your questions and chart data to generate personalized insights.</li>
+                <li><strong>Authentication Providers:</strong> Authentication data and basic profile information when you sign in through our supported identity providers, which may include Google Sign-In, Firebase Authentication, or other OAuth 2.0/OpenID Connect compliant identity services depending on the platform you use.</li>
+                <li><strong>AI Service Providers:</strong> We use various AI providers (including OpenAI, Anthropic Claude, Google Gemini, and others) to power our intelligent conversations and integrated experiences. These providers process your questions and chart data to generate personalized insights.</li>
             </ul>
 
             <h2>2. How We Use Your Information</h2>
@@ -184,8 +185,8 @@
             <p>We use the collected information for the following purposes:</p>
 
             <ul>
-                <li><strong>Core Functionality:</strong> Calculate your Vedic birth chart, planetary periods (Dashas), divisional charts, and generate personalized astrological insights.</li>
-                <li><strong>AI-Powered Guidance:</strong> Provide personalized life coaching conversations through AI that understands your unique astrological context.</li>
+                <li><strong>Core Functionality:</strong> Calculate your Vedic birth chart, planetary periods (Dashas), divisional charts, daily Panchang, planetary transits, and generate personalized astrological insights based on your birth details and current location.</li>
+                <li><strong>AI-Powered Guidance:</strong> Provide personalized life coaching conversations through AI that understands your unique astrological context across all supported platforms.</li>
                 <li><strong>Account Management:</strong> Create and manage your account, authenticate users, and enable multi-profile functionality.</li>
                 <li><strong>Service Improvement:</strong> Analyze usage patterns to improve App features, user experience, and accuracy of insights.</li>
                 <li><strong>Communication:</strong> Send you important updates about the App, respond to your inquiries, and provide customer support.</li>
@@ -200,8 +201,9 @@
             <h3>3.1 Service Providers</h3>
             <p>We share information with trusted third-party service providers who assist us in operating the App:</p>
             <ul>
-                <li><strong>Firebase/Google Cloud:</strong> For authentication, cloud storage, and backend infrastructure.</li>
-                <li><strong>AI Providers:</strong> Your questions and relevant birth chart data are sent to AI service providers (OpenAI, Anthropic, Google Gemini, etc.) to generate personalized insights. We ensure these providers maintain appropriate data protection standards.</li>
+                <li><strong>Cloud Infrastructure:</strong> For authentication, cloud storage, and backend infrastructure, we use services such as Firebase, Google Cloud, and other cloud providers.</li>
+                <li><strong>Identity Providers:</strong> For secure authentication, we integrate with identity providers including Google Sign-In, Firebase Authentication, and other OAuth 2.0/OpenID Connect services.</li>
+                <li><strong>AI Providers:</strong> Your questions and relevant birth chart data are sent to AI service providers (OpenAI, Anthropic, Google Gemini, etc.) to generate personalized insights across all platforms where Steer is available. We ensure these providers maintain appropriate data protection standards.</li>
             </ul>
 
             <h3>3.2 Legal Requirements</h3>
@@ -219,7 +221,7 @@
 
             <ul>
                 <li><strong>Encryption:</strong> All data transmitted between your device and our servers is encrypted using secure protocols (HTTPS/TLS). Sensitive data is encrypted at rest in our databases.</li>
-                <li><strong>Authentication:</strong> We use Firebase Authentication with Google Sign-In, which implements secure OAuth 2.0 protocols.</li>
+                <li><strong>Authentication:</strong> We use secure OAuth 2.0 and OpenID Connect protocols through trusted identity providers for user authentication across all platforms.</li>
                 <li><strong>Access Controls:</strong> Access to personal information is restricted to authorized personnel who need it to perform their job functions.</li>
                 <li><strong>Regular Security Audits:</strong> We regularly review and update our security practices to address emerging threats.</li>
                 <li><strong>Secure Infrastructure:</strong> Our backend services run on secure cloud infrastructure with regular security updates and monitoring.</li>
@@ -282,15 +284,47 @@
                 The App may contain links to third-party websites or services that are not owned or controlled by Steer Corp. We are not responsible for the privacy practices of these third parties. We encourage you to review the privacy policies of any third-party services you access through the App.
             </p>
 
-            <h2>10. AI and Automated Decision-Making</h2>
+            <h2>10. Astrology Services Disclaimer</h2>
 
             <p>
-                The App uses artificial intelligence to generate personalized insights and life guidance based on your Vedic birth chart. While our AI provides suggestions and perspectives, it does not make automated decisions that have legal or similarly significant effects on you. You maintain full control over your decisions and actions.
+                Steer provides Vedic astrology insights for <strong>entertainment, self-reflection, and personal development purposes only</strong>. Astrological interpretations are based on traditional Vedic principles combined with AI analysis and may vary from other sources or interpretations.
             </p>
 
+            <h3>10.1 Nature of Astrological Insights</h3>
+            <p>By using the App, you acknowledge and agree that:</p>
+            <ul>
+                <li>We do not claim to predict the future or guarantee any outcomes</li>
+                <li>Astrological insights are subjective interpretations based on traditional Vedic principles</li>
+                <li>Results may differ from those provided by other astrologers or astrological services</li>
+                <li>Astrology is not scientifically validated and should be treated as a tool for reflection, not fact</li>
+                <li>You assume full responsibility for how you interpret and apply astrological information in your life</li>
+            </ul>
+
+            <h3>10.2 AI Accuracy and Limitations</h3>
             <p>
-                The insights provided by the App are for informational and guidance purposes only and should not be considered as professional medical, legal, financial, or psychological advice. Always consult with qualified professionals for important life decisions.
+                The App uses artificial intelligence to generate personalized insights based on your Vedic birth chart. While our AI provides suggestions and perspectives, it does not make automated decisions that have legal or similarly significant effects on you. You maintain full control over your decisions and actions.
             </p>
+            <p>Our AI-powered features may occasionally:</p>
+            <ul>
+                <li>Generate inaccurate, incomplete, or inconsistent information</li>
+                <li>Misinterpret user questions or context</li>
+                <li>Provide responses that conflict with traditional astrological texts or other sources</li>
+                <li>Experience temporary service disruptions or errors</li>
+            </ul>
+            <p>
+                We continuously work to improve accuracy but cannot guarantee error-free performance. AI-generated content should be considered one perspective among many, not definitive guidance.
+            </p>
+
+            <h3>10.3 Professional Advice Disclaimer</h3>
+            <p>
+                <strong>Important:</strong> The insights provided by the App are for informational and guidance purposes only and should <strong>not</strong> be considered as professional medical, legal, financial, or psychological advice. You should:
+            </p>
+            <ul>
+                <li>Not make important life decisions solely based on astrological insights</li>
+                <li>Always consult qualified professionals (doctors, lawyers, financial advisors, therapists) for matters requiring professional expertise</li>
+                <li>Seek immediate professional help for any medical, mental health, or safety concerns</li>
+                <li>Use astrological insights as one of many inputs in your decision-making process, not as the sole determining factor</li>
+            </ul>
 
             <h2>11. California Privacy Rights</h2>
 
@@ -346,6 +380,65 @@
                 By using the App, you consent to this Privacy Policy and agree to its terms. If you do not agree with this policy, please do not use the App.
             </p>
 
+            <h2>16. Limitation of Liability</h2>
+
+            <p>
+                TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, STEER CORP AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, AND AFFILIATES SHALL NOT BE LIABLE FOR:
+            </p>
+
+            <ul>
+                <li><strong>Decisions and Actions:</strong> Any decisions made or actions taken by you or others based on AI-generated astrological insights, interpretations, or guidance provided through the App</li>
+                <li><strong>Emotional or Psychological Impact:</strong> Any emotional, psychological, or mental health effects resulting from astrological readings, predictions, or insights</li>
+                <li><strong>Accuracy of Calculations:</strong> The accuracy, completeness, or reliability of birth chart calculations, planetary position data, or astrological interpretations</li>
+                <li><strong>Third-Party AI Services:</strong> Service interruptions, errors, or data handling by third-party AI providers (OpenAI, Anthropic, Google, etc.) after data transmission</li>
+                <li><strong>Consequential Damages:</strong> Any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the App</li>
+                <li><strong>Data Processing:</strong> Actions taken by third-party service providers in processing your data in accordance with their own policies</li>
+            </ul>
+
+            <p>
+                Your use of the App and reliance on any information provided is solely at your own risk. This limitation of liability applies regardless of the form of action, whether in contract, tort (including negligence), strict liability, or otherwise, even if Steer Corp has been advised of the possibility of such damages.
+            </p>
+
+            <h2>17. Sensitive Personal Data</h2>
+
+            <h3>17.1 Classification of Birth Information</h3>
+            <p>
+                We recognize that birth information (date, time, and location of birth) constitutes sensitive personal data because it:
+            </p>
+            <ul>
+                <li>Can be used to uniquely identify individuals when combined with other data</li>
+                <li>Reveals age and may indicate other personal characteristics</li>
+                <li>Holds cultural and spiritual significance in many traditions</li>
+                <li>May be used in identity verification by some institutions</li>
+            </ul>
+
+            <h3>17.2 Your Explicit Consent</h3>
+            <p>
+                By providing your birth details (date, time, and place of birth) to the App, you explicitly consent to:
+            </p>
+            <ul>
+                <li><strong>Storage:</strong> Secure storage of this data on our servers and cloud infrastructure</li>
+                <li><strong>Processing:</strong> Processing by our systems and third-party AI services solely for the purpose of generating astrological calculations and personalized insights</li>
+                <li><strong>Retention:</strong> Retention of this data until you delete your profile or account</li>
+                <li><strong>Use:</strong> Use of this data exclusively for providing astrological services and improving the accuracy of our calculations</li>
+            </ul>
+
+            <h3>17.3 Your Control Over Birth Data</h3>
+            <p>
+                You maintain control over your sensitive birth information at all times:
+            </p>
+            <ul>
+                <li>You can view your stored birth details in your profile settings</li>
+                <li>You can update or correct your birth information at any time</li>
+                <li>You can delete your profile, which will remove all associated birth data</li>
+                <li>You can request complete account deletion, which will permanently remove all your data within 30 days</li>
+                <li>You can withdraw your consent at any time by deleting your profile or contacting us</li>
+            </ul>
+
+            <p>
+                We will never share your exact birth details in publicly shared content or use them for purposes other than providing astrological services.
+            </p>
+
             <div class="contact-box">
                 <h3>Contact Us</h3>
                 <p>
@@ -363,7 +456,7 @@
             </div>
 
             <p style="margin-top: 48px; padding-top: 24px; border-top: 1px solid #e0e0e0; color: #666; font-size: 0.9rem;">
-                This Privacy Policy is effective as of November 2025 and applies to all users of the Steer mobile application.
+                This Privacy Policy is effective as of January 2026 and applies to all users of Steer across all platforms, including mobile applications (iOS, Android), web applications, and integrated services.
             </p>
         </div>
     </div>
@@ -372,9 +465,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Steer Corp. All rights reserved.</p>
+                <p>&copy; 2026 Steer Corp. All rights reserved.</p>
                 <div style="margin-top: 8px;">
                     <a href="privacy.html" style="color: #95b5c0; text-decoration: none; margin-right: 16px;">Privacy Policy</a>
+                    <a href="terms.html" style="color: #95b5c0; text-decoration: none; margin-right: 16px;">Terms of Service</a>
                     <a href="support.html" style="color: #95b5c0; text-decoration: none; margin-right: 16px;">Support</a>
                     <a href="mailto:support@steercorp.io" style="color: #95b5c0; text-decoration: none;">Contact</a>
                 </div>
